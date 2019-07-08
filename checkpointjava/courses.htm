@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home Page</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="icon" href="">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+
+    </head>
+    <body>
+        <header>
+            <div class="horiz bar">
+                <nav>
+                    <ul>
+                        <li> <a href="index.html"> Home </a></li>
+                        <li><a href="courses.htm">Courses</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="site-container">
+                <div class="titrecour"><h2>Courses</h2></div>
+                <div class="cat">
+                        <div id="ex1" class="modal">
+                            <p>This is a GoMyCode Track. 
+                               <br> track has its own goal.<br> 
+                             By adopting this track, you chose your own goal.</p>
+                            <a href="#" rel="modal:close">Close</a>
+                        </div>
+                <div class=horiz>
+                <div class="c1">
+                        <a href="#ex1" rel="modal:open"><button class="btn btn1">view more</button></a>
+                </div>
+                <div class="c2">
+                        <a href="#ex1" rel="modal:open"><button class="btn btn2">view more</button></a>
+                </div>
+                <div class="c3">
+                        <a href="#ex1" rel="modal:open"><button class="btn btn3">view more</button></a>
+                </div>
+                </div>
+                <div class=horiz>
+                <div class="c4">
+                        <a href="#ex1" rel="modal:open"><button class="btn btn4">view more</button></a>
+                </div>
+                <div class="c5">
+                        <a href="#ex1" rel="modal:open"><button class="btn btn5">view more</button></a>
+                </div>
+                <div class="c6">
+                        <a href="#ex1" rel="modal:open"><button class="btn btn6">view more</button></a>
+                </div></div>
+            </div>
+                <div class="hola">
+                    <button onclick="bold()">B</button>
+                    <button onclick="italique()">I</button>
+                    <button onclick="underline()">Underline</button>
+                    <form name="f">
+                        <div class="riri">
+                        <select name="D1" onchange="textsize()">
+                            <option value="20">20px</option>
+                            <option value="30">30px</option>
+                            <option value="40">40px</option>
+                        </select>
+                        <select name="D2" onchange="textpl()">
+                            <option value="Arial">Arial</option>
+                            <option value="Verdana">Verdana</option>
+                            <option value="Geneva">Geneva</option>
+                        </select>
+                        </div>
+                    </form>
+                </div>
+                <div class="hola"><form><textarea id="textar"></textarea></form></div>
+            </div>
+            <footer>
+                <hr>
+                <h4>©2016–2019 All rights reserved</h4>
+            </footer>
+        </header>
+    </body>
+    <script>
+    $(".c1").mouseover(function(){
+        $(".btn1").show();
+        $(".c1").css("opacity","0.5");
+        
+    });
+    $(".c1").mouseout(function(){
+        $(".btn1").hide();
+        $(".c1").css("opacity","1");
+    });
+
+    $(".c2").mouseover(function(){
+        $(".btn2").show();
+        $(".c2").css("opacity","0.5");
+        
+    });
+    $(".c2").mouseout(function(){
+        $(".btn2").hide();
+        $(".c2").css("opacity","1");
+    });
+
+    $(".c3").mouseover(function(){
+        $(".btn3").show();
+        $(".c3").css("opacity","0.5");
+        
+    });
+    $(".c3").mouseout(function(){
+        $(".btn3").hide();
+        $(".c3").css("opacity","1");
+    });
+
+    $(".c4").mouseover(function(){
+        $(".btn4").show();
+        $(".c4").css("opacity","0.5");
+        
+    });
+    $(".c4").mouseout(function(){
+        $(".btn4").hide();
+        $(".c4").css("opacity","1");
+    });
+
+    $(".c5").mouseover(function(){
+        $(".btn5").show();
+        $(".c5").css("opacity","0.5");
+        
+    });
+    $(".c5").mouseout(function(){
+        $(".btn5").hide();
+        $(".c5").css("opacity","1");
+    });
+
+    $(".c6").mouseover(function(){
+        $(".btn6").show();
+        $(".c6").css("opacity","0.5");
+        
+    });
+    $(".c6").mouseout(function(){
+        $(".btn6").hide();
+        $(".c6").css("opacity","1");
+    });
+
+    </script>
+    
+    <script src="js/main.js"></script>
+</html>
